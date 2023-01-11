@@ -1,0 +1,211 @@
+:root{
+    --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+    --Light-Grayish-Cyan: hsl(180, 52%, 96%);
+    --Light-Grayish-Cyan2: hsl(180, 31%, 95%);
+    --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+    --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main{ background: var(--Light-Grayish-Cyan); }
+
+.header{
+    background-color: var(--Dark-Grayish-Cyan);
+    background-image: url("../public/images/bg-header-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 156px;
+    width: 100%;
+}
+
+.content{
+    padding: 50px 30px;
+    max-width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 8px 8px 20px 4px hsla(180, 29%, 50%, 30%);
+    padding: 0 15px;
+    border-left: 4px solid transparent;
+}
+
+.logo{ margin-top: -25px; }
+
+.logo img{ width: 50px; }
+
+.head{ margin-top: 5px; }
+
+.head p{
+    color: var(--Desaturated-Dark-Cyan);
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+}
+
+.head div{ display: inline-block; }
+
+.new, .featured{
+    padding: 5px 7px 3px;
+    border-radius: 50px;
+    color: var(--Light-Grayish-Cyan);
+    background: var(--Desaturated-Dark-Cyan);
+    margin-right: 10px;
+}
+
+.featured{ background: var(--Very-Dark-Grayish-Cyan); }
+
+.position{
+    color: var(--Very-Dark-Grayish-Cyan);
+    font-weight: 700;
+    margin: 10px 0 15px;
+    cursor: pointer;
+}
+
+.position:hover{ color: var(--Desaturated-Dark-Cyan); }
+
+.info{ color: var(--Dark-Grayish-Cyan); }
+
+.cardDiv2{
+    margin-top: 15px;
+    padding: 15px 0;
+    border-top: 1px solid var(--Very-Dark-Grayish-Cyan);
+}
+
+.tag{
+    display: inline-block;
+    background: var(--Light-Grayish-Cyan2);
+    color: var(--Very-Dark-Grayish-Cyan);
+    padding: 7px;
+    border-radius: 5px;
+    margin: 5px 15px 10px 0;
+    cursor: pointer;
+}
+
+.tag:hover{
+    background: var(--Very-Dark-Grayish-Cyan);
+    color: var(--Light-Grayish-Cyan2);
+}
+
+.tagClicked{ background: var(--Desaturated-Dark-Cyan); }
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin: -50px 0 50px;
+    margin-top: -50px;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px 4px hsla(180, 29%, 50%, 30%);
+}
+
+.clear{
+    font-size: 15px;
+    font-weight: 700;
+    outline: 0;
+    border: 0;
+    background: none;
+    color: var(--Desaturated-Dark-Cyan);
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+.clear:hover{ border-color: var(--Desaturated-Dark-Cyan); }
+
+.filter{
+    display: inline-flex;
+    align-items: center;
+    background: var(--Light-Grayish-Cyan2);
+    color: var(--Desaturated-Dark-Cyan);
+    margin: 5px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.filter p{ padding: 10px; }
+
+.filter button{
+    background: var(--Desaturated-Dark-Cyan);
+    outline: 0;
+    border: 0;
+    height: 34px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.filter button:hover{ background: var(--Very-Dark-Grayish-Cyan); }
+
+
+@media screen and (min-width: 900px){
+    
+    .header{
+        background-image: url("../public/images/bg-header-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card{
+        flex-direction: row;
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    .cardDiv1{
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .logo{
+        margin: 0 15px 0px 0;
+    }
+
+    .head{
+        margin: 0;
+    }
+
+    .head p{
+        margin: 0 15px 5px 0;
+    }
+
+    .position{margin: 10px 0;}
+
+    .cardDiv2{
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    .tags{
+        display: flex;
+        
+    }
+
+    .tag{
+        margin: 0 5px;
+        padding: 10px;
+    }
+}
