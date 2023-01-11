@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static-job-listing-master/static/css/main.c7d7be77.css",
+    "main.js": "/static-job-listing-master/static/js/main.f1561829.js",
+    "static/media/bg-header-desktop.svg": "/static-job-listing-master/static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg",
+    "index.html": "/static-job-listing-master/index.html",
+    "static/media/bg-header-mobile.svg": "/static-job-listing-master/static/media/bg-header-mobile.b7750a0c3e0c016763b9.svg",
+    "main.c7d7be77.css.map": "/static-job-listing-master/static/css/main.c7d7be77.css.map",
+    "main.f1561829.js.map": "/static-job-listing-master/static/js/main.f1561829.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7d7be77.css",
+    "static/js/main.f1561829.js"
+  ]
+}
